@@ -9,6 +9,7 @@
  left: 0;
  right: 0;
  background-color: #fff;
+ z-index: 10000;
 }
 .header__left h3{
  font-family: 'Homemade Apple', cursive;
