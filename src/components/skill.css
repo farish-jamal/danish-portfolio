@@ -12,8 +12,13 @@
   margin: 40px 40px;
   padding: 5px;
   width: 200px;
-  border: 1px solid gray;
+  border: 1px solid rgb(167, 167, 167);
   border-radius: 10px;
+}
+.skill__box:hover{
+ background-color: rgb(107, 146, 253);
+ cursor: pointer;
+ color: #fff;
 }
 .skill__box img{
  width: 150px;

@@ -18,18 +18,17 @@
 .header__right__links{
  padding-right: 25px;
 }
-.header__right__links a{
- text-decoration: none;
- padding: 0 10px;
+.header__right__links i{
+ font-size: 23px;
+ cursor: pointer;
+ padding: 0 15px;
  color: #000;
 }
 .header__btn{
  padding: 10px;
  border-radius: 10px;
  border: none;
- background-color: pink;
+ background-color: rgb(107, 146, 253);
  cursor: pointer;
-}
-.header__btn:hover{
- background-color: rgb(247, 190, 199);
+ color: #fff;
 }
