@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Homemade+Apple&family=Open+Sans&display=swap');
+
 .header{
  display: flex;
  align-items: center;
@@ -7,6 +9,11 @@
  left: 0;
  right: 0;
  background-color: #fff;
+}
+.header__left h3{
+ font-family: 'Homemade Apple', cursive;
+ color: rgb(107, 146, 253);
+ font-size: 19px;
 }
 .header__left, .header__right{
  padding: 10px 40px;

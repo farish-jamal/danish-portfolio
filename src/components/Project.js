@@ -11,8 +11,6 @@ const Project = () => {
     <div className="project__section">
       <SingleProject />
       <SingleProject />
-      <SingleProject />
-      <SingleProject />
     </div>
   </div>
  )
