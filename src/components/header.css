@@ -1,0 +1,34 @@
+.header{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+.header__left, .header__right{
+ padding: 10px 40px;
+}
+.header__right{
+ display: flex;
+ align-items: center;
+}
+.header__right__links{
+ padding-right: 25px;
+}
+.header__right__links a{
+ text-decoration: none;
+ padding: 0 10px;
+ color: #000;
+}
+.header__btn{
+ padding: 10px;
+ border-radius: 10px;
+ border: none;
+ background-color: pink;
+ cursor: pointer;
+}
+.header__btn:hover{
+ background-color: rgb(247, 190, 199);
+}
