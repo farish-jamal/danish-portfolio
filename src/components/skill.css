@@ -1,0 +1,24 @@
+.skill{
+ margin: 90px 0 ;
+ padding: 30px 0px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ text-align: center;
+ background-color: rgb(231, 231, 231);
+}
+.skill__box{
+  margin: 40px 40px;
+  padding: 5px;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.skill__box img{
+ width: 150px;
+ padding: 10px;
+}
+.skill__box h4{
+ text-transform: uppercase;
+}

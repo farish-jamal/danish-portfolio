@@ -6,6 +6,7 @@
  top: 0;
  left: 0;
  right: 0;
+ background-color: #fff;
 }
 .header__left, .header__right{
  padding: 10px 40px;
