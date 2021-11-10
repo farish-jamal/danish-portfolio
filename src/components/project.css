@@ -1,0 +1,45 @@
+.project__section{
+ margin: 40px 0;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+.project__head{
+ text-align: center;
+ text-transform: uppercase;
+}
+.project__head::after{
+  content: '';
+  position: absolute;
+  right: 605px;
+  width: 140px;
+  height: 3px;
+  background-color: rgb(107, 146, 253);
+}
+.single__project{
+  width: 34vw;
+  margin: 40px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.single__project img{
+ width: 100%;
+ height: 250px;
+ border-radius: 7px;
+}
+.single__project h2, p{
+ padding: 9px 0;
+}
+.project__btn{
+ width: 80%;
+ padding: 10px;
+ border-radius: 10px;
+ border: none;
+ background-color: rgb(107, 146, 253);
+ cursor: pointer;
+ color: #fff;
+ margin: 10px;
+}
