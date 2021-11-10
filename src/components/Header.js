@@ -2,11 +2,14 @@ import React from 'react'
 import './header.css'
 
 function Header() {
+  const scrollFun = () => {
+     window.scroll(0, 0);
+  }
  return (
    <>
   <div className="header">
      <div className="header__left">
-       <h3>Danish Jamal</h3>
+       <h3 onClick={scrollFun}>Danish Jamal</h3>
      </div>
      <div className="header__right">
        <div className="header__right__links">

@@ -8,15 +8,16 @@
 .project__head{
  text-align: center;
  text-transform: uppercase;
+ color: rgb(107, 146, 253);
 }
-.project__head::after{
+/* .project__head::after{
   content: '';
   position: absolute;
   right: 605px;
   width: 140px;
   height: 3px;
   background-color: rgb(107, 146, 253);
-}
+} */
 .single__project{
   width: 34vw;
   margin: 40px;
@@ -42,4 +43,11 @@
  cursor: pointer;
  color: #fff;
  margin: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .single__project{
+    width: 90vw;
+    margin: 20px 10px;
+  }
 }

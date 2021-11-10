@@ -13,3 +13,28 @@
 .about__info{
  padding-right: 200px;
 }
+
+@media screen and (max-width: 770px) {
+  .about{
+    flex-direction: column;
+  }
+  .about__info{
+    padding-right: 0px;
+    margin: 20px 0;
+   }
+   .about{
+    margin-top: 50px;
+    padding: 30px 40px;
+  }
+  .about__photo img{
+    width: 400px;
+    height: 350px;
+    border-radius: 1110px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .about__photo img{
+    width: 90vw;
+    height: 300px;
+  }
+}
