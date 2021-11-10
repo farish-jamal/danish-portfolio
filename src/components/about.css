@@ -1,0 +1,15 @@
+.about{
+  margin-top: 120px;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__photo img{
+  width: 400px;
+  height: 350px;
+  border-radius: 1110px;
+}
+.about__info{
+ padding-right: 200px;
+}
