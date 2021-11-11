@@ -1,9 +1,10 @@
-import React from 'react'
 import SingleProject from './SingleProject'
 import './project.css'
 import Fade from 'react-reveal/Fade';
+import React from "react";
 
-const Project = () => {
+const Project = ({posts}) => {
+
  return (
   <div className="project">
     <Fade right>
@@ -12,10 +13,14 @@ const Project = () => {
     </div>
     </Fade>
     <div className="project__section">
-    <Fade left>
-      <SingleProject />
-      <SingleProject />
-      </Fade>
+    {posts.map(({ id, post }) => (
+      <SingleProject
+        key={id}
+        caption={post.caption}
+         imgUrl={post.imgUrl}
+         description = {post.description}
+      />
+    ))}
     </div>
   </div>
  )

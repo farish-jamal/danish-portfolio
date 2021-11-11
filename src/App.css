@@ -1,0 +1,21 @@
+.img__upload{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ position: relative;
+ top: 90px;
+}
+.app__signup{
+ display: flex;
+ flex-direction: column; 
+}
+.img__upload input{
+ width: 400px;
+ padding: 10px;
+}
+@media screen and (max-width: 500px) {
+ .img__upload input{
+     width: 90vw;
+ }
+}

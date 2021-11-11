@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 
-function Header() {
+function Header({setOpenSignIn}) {
   const scrollFun = () => {
      window.scroll(0, 0);
   }
@@ -18,7 +18,7 @@ function Header() {
        <a href="/"><i className="fa fa-twitter" aria-hidden="true" style={{color:"#0e76a8"}}></i> </a>
        <a href="/"><i className="fa fa-linkedin" aria-hidden="true" style={{color:"#4267B2"}}></i> </a>
        </div>
-       <button className="header__btn">Admin</button>
+       <button className="header__btn" onClick={() => setOpenSignIn(true)}>Admin</button>
      </div>
   </div>
   </>
