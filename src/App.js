@@ -1,10 +1,10 @@
-import './App.css';
-import About from './components/About';
-import Header from './components/Header';
-import Project from './components/Project';
-import Skill from './components/Skill';
-import Footer from './components/Footer';
-import ImageUpload from './ImageUpload';
+import "./App.css";
+import About from "./components/About";
+import Header from "./components/Header";
+import Project from "./components/Project";
+import Skill from "./components/Skill";
+import Footer from "./components/Footer";
+import ImageUpload from "./ImageUpload";
 import React, { useState, useEffect } from "react";
 import { db, auth } from "./firebase";
 import Box from "@mui/material/Box";
@@ -12,18 +12,14 @@ import Modal from "@mui/material/Modal";
 import { Button, Input } from "@mui/material";
 
 function App() {
-  
   const [posts, setPosts] = useState([]);
-  // const [open, setOpen] = useState(false);
   const [opensignin, setOpenSignIn] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
 
-
-   // Modal styling :
-   const style = {
+  // Modal styling :
+  const style = {
     position: "absolute",
     top: "50%",
     left: "50%",
@@ -34,7 +30,7 @@ function App() {
     boxShadow: 24,
     p: 4,
   };
-  
+
   useEffect(() => {
     // Responding on every auth change :
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -56,20 +52,22 @@ function App() {
 
   useEffect(() => {
     // collecting data from database:
-    db.collection("posts").orderBy('timestamp', 'desc').onSnapshot((snapshot) =>
-      setPosts(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          post: doc.data(),
-        }))
-      )
-    );
+    db.collection("posts")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setPosts(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            post: doc.data(),
+          }))
+        )
+      );
   }, []);
 
   // LogIn logic :
   const SignIn = (event) => {
     event.preventDefault();
-    // signIn with auth module :
+    // LogIn with auth module :
     auth
       .signInWithEmailAndPassword(email, password)
       .catch((error) => alert(error.message));
@@ -101,7 +99,7 @@ function App() {
                 type="submit"
                 onClick={SignIn}
                 style={{
-                  backgroundColor: "lightpink",
+                  backgroundColor: "rgb(107, 146, 253)",
                   marginTop: "20px",
                   color: "#000",
                 }}
@@ -113,12 +111,11 @@ function App() {
         </Box>
       </Modal>
 
-
-      <Header setOpenSignIn={setOpenSignIn}/>
-      <ImageUpload />
+      <Header setOpenSignIn={setOpenSignIn} user={user} />
+      {user ? <ImageUpload /> : <span></span>}
       <About />
       <Skill />
-      <Project posts={posts}/>
+      <Project posts={posts} />
       <Footer />
     </div>
   );
