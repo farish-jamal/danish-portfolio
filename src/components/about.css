@@ -32,9 +32,9 @@
     border-radius: 1110px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .about__photo img{
-    width: 90vw;
+    width: 80vw;
     height: 300px;
   }
 }
